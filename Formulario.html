@@ -11,10 +11,10 @@
 <body>
     <form action="">
         <label for="Nombre">Nombre de Usuario</label>
-        <input type="text" value="" name="Nombre">
+        <input type="text" value="" name="Nombre" required>
         <br>
         <label for="Password">Contraseña</label>
-        <input type="password" name="Password">
+        <input type="password" name="Password" required>
         <br>
         <label for="ciudad">Pais</label>
         <select name="ciudad">
@@ -28,7 +28,15 @@
         <br>
         <label for="age">edad</label>
         <input type="number" name="age" min="13" max="100" step="0.5" disabled>
-        < /form>
+        <br>
+        <label for="email">Correo Electronico</label>
+        <input type="email" name="email" autocomplete="off" placeholder="ejemplo@asldo.com">
+        <br>
+        <label for="phone">Telefono</label>
+        <input type="tel" name="phone" autocomplete="off" placeholder="444 224 7777">
+        <br>
+        <button type="submit">Guardar</button>
+    </form>
 </body>
 
 </html>
